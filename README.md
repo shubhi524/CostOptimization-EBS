@@ -9,7 +9,7 @@ In this example, we'll create a Lambda function that identifies EBS snapshots th
 The Lambda function fetches all EBS snapshots owned by the same account ('self') and also retrieves a list of active EC2 instances (running and stopped). For each snapshot, it checks if the associated volume (if 
 exists) is not associated with any active instance. If it finds a stale snapshot, it deletes it, effectively optimizing storage costs.
 
-### steps
+### steps:
 1. Create an EC2 Instance,
 2. Create a Snapshot for the volume of created EC2,
 3. Create a Lambda Function with Python as a run time,
